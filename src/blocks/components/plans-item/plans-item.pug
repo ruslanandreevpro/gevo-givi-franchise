@@ -1,0 +1,8 @@
+mixin plans-item(title, count, badge, alignment)
+    div(class="plans-item " + alignment)
+        .title
+            p #{title}
+        div(class="count " + alignment)
+            p #{count}
+        div(class="badge " + alignment)
+            p #{badge}

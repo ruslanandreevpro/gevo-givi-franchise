@@ -1,0 +1,12 @@
+include ../input/input
+include ../button/button
+
+mixin popup-form(title, ...inputs)
+    .popup-form
+        .popup-form__title
+            p #{title}
+        .popup-form__form
+            form
+                each input in inputs
+                    +input(input.id, input.name, input.type, input.placeholder)
+                +button('question_btn', '280px', '70px', 'Оставить заявку', 'submit')

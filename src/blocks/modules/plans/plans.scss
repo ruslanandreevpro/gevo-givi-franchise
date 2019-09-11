@@ -1,0 +1,151 @@
+.plans {
+  padding: 70px 0 90px;
+  background-color: #8fc742;
+
+  &__title {
+    text-align: center;
+
+    h2 {
+      font-family: "a_FuturaRound", sans-serif;
+      font-size: 45px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 250px;
+    margin-top: 90px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 10px);
+      left: 50%;
+      width: 4px;
+      height: 85%;
+      background-color: #000000;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (max-width: 1321px) {
+
+  .plans {
+
+    &__items {
+      padding: 0 170px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .plans {
+
+    &__items {
+      padding: 0 70px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+  .plans {
+    padding: 70px 0 90px;
+    background: url("../img/09-border-top-mobile.png") no-repeat center top / 100% 50px, url("../img/09-border-bottom-mobile.png") no-repeat center bottom / 100% 70px;
+
+    &__title {
+      width: 400px;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 32px;
+      }
+    }
+
+    &__items {
+      padding: 0 190px;
+
+      &:after {
+        z-index: 1;
+        background-color: #50b345;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .plans {
+    padding: 70px 0 90px;
+
+    &__title {
+      width: 400px;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 32px;
+      }
+    }
+
+    &__items {
+      padding: 0 100px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .plans {
+    padding: 50px 0;
+    background: url("../img/09-border-top-mobile.png") no-repeat center top / 100% 25px, url("../img/09-border-bottom-mobile.png") no-repeat center bottom / 100% 35px;
+
+    &__title {
+      width: 250px;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+
+    &__items {
+      padding: 0 120px;
+      margin-top: 45px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .plans {
+
+    &__items {
+      padding: 0 70px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+  .plans {
+
+    &__items {
+      padding: 0 40px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+
+  .plans {
+
+    &__items {
+      padding: 0 15px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+include ../../components/towns/towns
+include ../../components/button/button
+
+section#reservation.reservation
+    .container
+        .reservation__title
+            h2
+                | Зарабатывайте от
+                span &#160;250.000&#160;
+                | рублей в месяц
+        .reservation__subtitle
+            p
+                | Приоритетные города для
+                span &#160;открытия&#160;
+                | магазина
+        .reservation__towns
+            +towns()
+        .reservation__btn
+            +button('reservation_btn', '510px', '78px', 'Забронировать город')
+        .reservation__paprika
+            img(src="./img/05-paprika.png")
+        .reservation__radish
+            img(src="./img/05-radish.png")
+        .reservation__circle-top
+        .reservation__circle-bottom-big
+        .reservation__circle-bottom-small
+    .reservation__paprika-mobile
+        img(src="./img/05-paprika-mobile.png")

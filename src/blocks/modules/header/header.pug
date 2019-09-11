@@ -1,0 +1,37 @@
+include ../../components/topbar/topbar
+include ../../components/button/button
+
+header#header.header
+    .container
+        .header__top
+            +topbar()
+        .header__logo
+            img(src="./img/svg/logo.svg")
+        .header__offer
+            .header__offer_title
+                h1
+                    | Открой свой бизнес
+                    br
+                    | по&#160;франшизе с Гево&Гиви
+            .header__offer_subtitle
+                p
+                    | и зарабатывай
+                    br
+                    | от
+                    span &#160;250.000&#160;
+                    | рублей в месяц
+            .header__offer_btn
+                +button('download_btn', '314px', '7vh', 'Скачать презентацию')
+        .header__detail
+                p
+                    | Посмотрите подробную презентацию о франшизе и полный
+                    br
+                    | расчет финансовой модели для запуска
+        .header__tomato
+            img(src="./img/header-tomato.png")
+        .header__bread
+            img(src="./img/header-bread.png")
+    .header__hot-pepper
+        img(src="./img/header-hot-pepper.png")
+    .header__leaf
+        img(src="./img/header-leaf.png")

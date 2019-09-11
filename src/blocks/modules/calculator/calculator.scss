@@ -1,0 +1,653 @@
+.calculator {
+  padding: 45px 0;
+  background: #8fc742;
+
+  .container {
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+
+    h2 {
+      font-family: "a_FuturaRound", sans-serif;
+      font-size: 45px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-top: 30px;
+
+    p {
+      font-family: "a_FuturaRound", sans-serif;
+      font-size: 30px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__sliders {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+
+    &_sales {
+      width: 270px;
+      text-align: center;
+
+      .slider {
+
+        .range-bar {
+          display: block;
+          position: relative;
+          width: 100%;
+          height: 4px;
+          background-color: #000000;
+          border-radius: 15px;
+        }
+
+        .range-quantity {
+          display: block;
+          width: 0;
+          height: 100%;
+          background-color: #d13834;
+          border-radius: 15px;
+        }
+
+        .range-handle {
+          position: absolute;
+          top: -18px;
+          left: 0;
+          width: 45px;
+          height: 37px;
+          background: url("../img/08-range-tomato.png") no-repeat center / contain;
+          cursor: move;
+
+          //-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+          //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .range-min, .range-max {
+          position: absolute;
+          top: -9px;
+          width: 24px;
+          height: 20px;
+          color: #181819;
+          font-size: 12px;
+          padding-top: 4px;
+          text-align: center;
+        }
+
+        .range-min {
+          left: -30px;
+        }
+
+        .range-max {
+          right: -30px;
+        }
+      }
+
+      p {
+        font-family: "a_FuturaRound", sans-serif;
+        font-size: 20px;
+        margin-top: 30px;
+      }
+
+      .qty {
+        font-family: "BrushType", sans-serif;
+        font-size: 40px;
+        margin-top: 30px;
+      }
+    }
+
+    &_check {
+      width: 270px;
+      text-align: center;
+
+      .slider {
+
+        .range-bar {
+          display: block;
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          height: 4px;
+          background-color: #000000;
+          border-radius: 15px;
+        }
+
+        .range-quantity {
+          display: block;
+          width: 0;
+          height: 100%;
+          background-color: #ed8f20;
+          border-radius: 15px;
+        }
+
+        .range-handle {
+          position: absolute;
+          z-index: 0;
+          top: -18px;
+          left: 0;
+          width: 45px;
+          height: 37px;
+          background: url("../img/08-range-carrot.png") no-repeat center / contain;
+          cursor: move;
+
+          //-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+          //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .range-min, .range-max {
+          position: absolute;
+          top: -9px;
+          width: 24px;
+          height: 20px;
+          color: #181819;
+          font-size: 12px;
+          padding-top: 4px;
+          text-align: center;
+        }
+
+        .range-min {
+          left: -30px;
+        }
+
+        .range-max {
+          right: -30px;
+        }
+      }
+
+      p {
+        font-family: "a_FuturaRound", sans-serif;
+        font-size: 20px;
+        margin-top: 30px;
+      }
+
+      .check {
+        font-family: "BrushType", sans-serif;
+        font-size: 40px;
+        margin-top: 30px;
+      }
+    }
+
+    &_area {
+      width: 270px;
+      text-align: center;
+
+      .slider {
+
+        .range-bar {
+          display: block;
+          position: relative;
+          width: 100%;
+          height: 4px;
+          background-color: #000000;
+          border-radius: 15px;
+        }
+
+        .range-quantity {
+          display: block;
+          width: 0;
+          height: 100%;
+          background-color: #f0785a;
+          border-radius: 15px;
+        }
+
+        .range-handle {
+          position: absolute;
+          top: -18px;
+          left: 0;
+          width: 45px;
+          height: 37px;
+          background: url("../img/08-range-store.png") no-repeat center / contain;
+          cursor: move;
+
+          //-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+          //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .range-min, .range-max {
+          position: absolute;
+          top: -9px;
+          width: 24px;
+          height: 20px;
+          color: #181819;
+          font-size: 12px;
+          padding-top: 4px;
+          text-align: center;
+        }
+
+        .range-min {
+          left: -30px;
+        }
+
+        .range-max {
+          right: -30px;
+        }
+      }
+
+      p {
+        font-family: "a_FuturaRound", sans-serif;
+        font-size: 20px;
+        margin-top: 30px;
+      }
+
+      .area {
+        font-family: "BrushType", sans-serif;
+        font-size: 40px;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__total {
+    margin-top: 120px;
+
+    &_income {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+        margin: 0;
+      }
+
+      .income {
+        font-family: "BrushType", sans-serif;
+        font-size: 40px;
+        margin-left: 10px;
+      }
+    }
+
+    &_cost {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+        margin: 0;
+      }
+
+      .cost {
+        font-family: "BrushType", sans-serif;
+        font-size: 40px;
+        margin-left: 10px;
+      }
+    }
+
+    &_profit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-family: "a_FuturaRound", sans-serif;
+        font-size: 36px;
+        margin: 0;
+      }
+
+      .profit {
+        font-family: "BrushType", sans-serif;
+        font-size: 45px;
+        margin: 7px 0 0 10px;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 60px;
+    text-align: center;
+
+    //button {
+    //  width: 314px;
+    //  height: 65px;
+    //  background: #ffb941;
+    //  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    //  border: none;
+    //  border-radius: 17px;
+    //  font-family: Tahoma, sans-serif;
+    //  font-size: 1.1em;
+    //  letter-spacing: 0.05em;
+    //  cursor: pointer;
+    //
+    //  &:hover {
+    //    box-shadow: none;
+    //    background: #ffd73e;
+    //  }
+    //}
+  }
+
+  &__ps {
+    width: 700px;
+    margin: 45px auto 0;
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+  &__leaf {
+    position: absolute;
+    top: -40px;
+    left: -150px;
+    width: 230px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__tomatos {
+    position: absolute;
+    right: -160px;
+    bottom: 20px;
+    width: 357px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__seeds-mobile-top {
+    display: none;
+    position: absolute;
+    top: -230px;
+    right: 0;
+    width: 170px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__seeds-mobile-bottom {
+    display: none;
+    position: absolute;
+    bottom: 270px;
+    left: 0;
+    width: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+  .calculator {
+    background: #50b345;
+    position: relative;
+
+    &__title {
+
+      h2 {
+        color: #ffffff;
+      }
+    }
+
+    &__subtitle {
+
+      p {
+        color: #ffffff;
+      }
+    }
+
+    &__sliders {
+      flex-direction: column;
+      align-items: center;
+
+      &_sales {
+        width: 340px;
+
+        p {
+          color: #ffffff;
+        }
+      }
+
+      &_check {
+        width: 340px;
+        margin-top: 45px;
+
+        p {
+          color: #ffffff;
+        }
+      }
+
+      &_area {
+        width: 340px;
+        margin-top: 45px;
+
+        p {
+          color: #ffffff;
+        }
+      }
+    }
+
+    &__ps {
+      width: 100%;
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    &__leaf {
+      display: none;
+    }
+
+    &__tomatos {
+      display: none;
+    }
+
+    &__seeds-mobile-top {
+      display: block;
+    }
+
+    &__seeds-mobile-bottom {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .calculator {
+
+    &__title {
+
+      h2 {
+        font-size: 32px;
+      }
+    }
+
+    &__subtitle {
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    &__sliders {
+      flex-direction: column;
+      align-items: center;
+
+      &_sales {
+        width: 340px;
+
+        p {
+          color: #ffffff;
+        }
+      }
+
+      &_check {
+        width: 340px;
+        margin-top: 45px;
+
+        p {
+          color: #ffffff;
+        }
+      }
+
+      &_area {
+        width: 340px;
+        margin-top: 45px;
+
+        p {
+          color: #ffffff;
+        }
+      }
+    }
+
+    &__ps {
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    &__seeds-mobile-top {
+      top: -170px;
+      width: 130px;
+    }
+
+    &__seeds-mobile-bottom {
+      bottom: 300px;
+      width: 130px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .calculator {
+
+    &__title {
+      width: 290px;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+
+    &__subtitle {
+
+      p {
+        font-size: 17px;
+      }
+    }
+
+    &__sliders {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 70px;
+
+      &_sales {
+        width: 80%;
+
+        p {
+          font-size: 18px;
+        }
+
+        .qty {
+          font-size: 40px;
+        }
+      }
+
+      &_check {
+        width: 80%;
+
+        p {
+          font-size: 18px;
+        }
+
+        .check {
+          font-size: 40px;
+        }
+      }
+
+      &_area {
+        width: 80%;
+
+        p {
+          font-size: 18px;
+        }
+
+        .area {
+          font-size: 40px;
+        }
+      }
+    }
+
+    &__total {
+      margin-top: 45px;
+
+      &_income {
+
+        p {
+          font-size: 16px;
+        }
+
+        .income {
+          font-size: 20px;
+        }
+      }
+
+      &_cost {
+
+        p {
+          font-size: 16px;
+        }
+
+        .cost {
+          font-size: 20px;
+        }
+      }
+
+      &_profit {
+
+        p {
+          font-size: 22px;
+        }
+
+        .profit {
+          font-size: 24px;
+          margin: 7px 0 0 10px;
+          background-color: #50b345;
+        }
+      }
+    }
+
+    &__btn {
+      margin-top: 20px;
+
+      button {
+        width: 254px !important;
+        height: 49px !important;
+        font-size: 16px;
+      }
+    }
+
+    &__ps {
+      display: none;
+    }
+
+    &__seeds-mobile-top {
+      top: -140px;
+      width: 100px;
+    }
+
+    &__seeds-mobile-bottom {
+      bottom: 100px;
+    }
+  }
+}

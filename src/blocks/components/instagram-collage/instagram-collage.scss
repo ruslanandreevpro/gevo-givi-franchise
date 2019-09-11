@@ -1,0 +1,145 @@
+.instagram-collage {
+  box-sizing: border-box;
+  position: relative;
+  width: 480px;
+  border: 2px solid #50b345;
+  padding: 6px;
+  border-radius: 10px;
+
+  &__title {
+    font-family: "a_FuturaRound", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    li {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+
+      &:hover {
+
+        .overlay {
+          opacity: 1;
+        }
+      }
+
+      .overlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        opacity: 0;
+
+        span {
+          display: flex;
+          align-items: center;
+          color: #ffffff;
+
+          img {
+            width: 16px;
+            height: 16px;
+
+            filter: invert(100);
+          }
+        }
+      }
+
+      a {
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &:nth-child(1) {
+        margin: 0 6px 6px 0;
+      }
+
+      &:nth-child(2) {
+        margin: 0 6px 6px 0;
+      }
+
+      &:nth-child(3) {
+        margin: 0 0 6px 0;
+      }
+
+      &:nth-child(4) {
+        margin: 0 6px 6px 0;
+      }
+
+      &:nth-child(5) {
+        margin: 0 6px 6px 0;
+      }
+
+      &:nth-child(6) {
+        margin: 0 0 6px 0;
+      }
+
+      &:nth-child(7) {
+        margin: 0 6px 0 0;
+      }
+
+      &:nth-child(8) {
+        margin: 0 6px 0 0;
+      }
+
+      &:nth-child(9) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+  .instagram-collage {
+    order: 1;
+    width: 462px;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+
+    &__title {
+
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .instagram-collage {
+    width: 288px;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    ul {
+
+      li {
+        width: 92px;
+        height: 92px;
+      }
+    }
+  }
+}

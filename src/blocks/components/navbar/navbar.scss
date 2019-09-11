@@ -1,0 +1,52 @@
+.navbar {
+  overflow: hidden;
+
+  a {
+    font-family: "a_FuturaRound", sans-serif;
+    font-size: 19px;
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 40px;
+    letter-spacing: 0.05em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: #ffb941;
+    }
+
+    &.active {
+      color: #ffb941;
+    }
+  }
+
+  .toggler {
+    display: none;
+  }
+
+  .bar {
+    width: 23px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 6px 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar {
+
+    a {
+      display: none;
+    }
+
+    .toggler {
+      float: right;
+      display: block;
+    }
+  }
+}

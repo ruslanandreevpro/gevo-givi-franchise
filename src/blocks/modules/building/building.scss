@@ -1,0 +1,153 @@
+.building {
+  background: url("../img/07-border-bottom.png") no-repeat center bottom;
+  padding: 125px 0 210px;
+
+  .container {
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+
+    h2 {
+      font-family: "a_FuturaRound", sans-serif;
+      font-size: 45px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__content {
+    padding: 0 120px;
+  }
+
+  &__paprika {
+    position: absolute;
+    top: -80px;
+    right: 20px;
+    width: 197px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    top: 20px;
+    left: -190px;
+    width: 251px;
+    height: 251px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #8fc742;
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .building {
+
+    &__title {
+
+      h2 {
+        font-size: 40px;
+      }
+    }
+
+    &__content {
+      padding: 0;
+    }
+
+    &__paprika {
+      right: -60px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+  .building {
+    background: url("../img/07-border-top-mobile.png") no-repeat center top / 100% 70px, url("../img/07-border-bottom-mobile.png") no-repeat center bottom / 100% 120px;
+    padding: 125px 0 150px;
+
+    &__title {
+
+      h2 {
+        font-size: 40px;
+      }
+    }
+
+    &__content {
+      padding: 0;
+    }
+
+    &__paprika {
+      top: -120px;
+      right: -120px;
+    }
+
+    &__circle {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .building {
+    padding: 125px 0 150px;
+
+    &__title {
+
+      h2 {
+        font-size: 32px;
+      }
+    }
+
+    &__paprika {
+      right: -170px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .building {
+    padding: 90px 0 120px;
+
+    &__title {
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+
+    &__paprika {
+      right: -170px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+  .building {
+    background: url("../img/07-border-top-mobile.png") no-repeat center top / 100% 35px, url("../img/07-border-bottom-mobile.png") no-repeat center bottom / 100% 50px;
+    padding: 60px 0;
+
+    &__title {
+      width: 180px;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+
+    &__paprika {
+      top: -60px;
+      right: -70px;
+      width: 140px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+include ../navbar/navbar
+
+mixin topbar()
+    .topbar
+        +navbar('navbar', {text: 'О нас', link: '#about'}, {text: 'Интерьер', link: '#interior'}, {text: 'Преимущества', link: '#merits'}, {text: 'Калькулятор', link: '#calculator'}, {text: 'Контакты', link: '#contacts'})
+        .topbar__contacts
+            a(href="tel:+79185558101") 8 (918) 555-81-01
+            p телефон горячей линии

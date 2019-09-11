@@ -1,0 +1,54 @@
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color .25s ease-in-out;
+
+  a {
+    width: 27px;
+    height: 28px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &:hover {
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .social-item {
+    border: 1px solid #50b345;
+
+    &:hover {
+      background-color: #50b345;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .social-item {
+    width: 27px;
+    height: 27px;
+
+    a {
+      width: 16px;
+      height: 16px;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+include ../../components/merit-item/merit-item
+
+section#merits.merits
+    .container
+        .merits__content
+            .merits__content_title
+                h2 Приобретая франшизу, вы получаете
+            .merits__content_items
+                +merit-item('Помощь в найме персонала, обучение и мотивация')
+                +merit-item('Список поставщиков')
+                +merit-item('Специальные цены на продукты, мебель и оборудование')
+                +merit-item('Разработка дизайн-проекта помещения')
+                +merit-item('Личный менеджер на весь период работы')
+                +merit-item('Поддержка в соц.сетях, предоставление контента')
+        .merits__paprika
+            img(src="./img/04-paprika.png")
+        .merits__leaf
+            img(src="./img/04-leaf.png")
+        .merits__seeds
+            img(src="./img/04-seeds.png")
+    .merits__paprika-mobile
+        img(src="./img/04-paprika-mobile.png")

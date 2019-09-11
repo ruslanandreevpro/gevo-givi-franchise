@@ -1,0 +1,312 @@
+.reservation {
+  padding: 100px 0 230px;
+
+  .container {
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+
+    h2 {
+      font-family: "a_FuturaRound", sans-serif;
+      font-size: 40px;
+      letter-spacing: 0.005em;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-top: 30px;
+
+    p {
+      font-family: "Tahoma", sans-serif;
+      font-size: 30px;
+      letter-spacing: 0.025em;
+
+      span {
+        background-color: #8fc742;
+        color: #ffffff;
+        padding: 0 0 5px;
+      }
+    }
+  }
+
+  &__towns {
+    margin: 120px 170px 70px;
+  }
+
+  &__btn {
+    text-align: center;
+  }
+
+  &__paprika {
+    position: absolute;
+    top: -250px;
+    right: -220px;
+    width: 400px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__paprika-mobile {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    width: 130px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__radish {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: -330px;
+    left: -270px;
+    width: 426px;
+    height: 426px;
+    background: #8fc742;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    img {
+      width: 305px;
+    }
+  }
+
+  &__circle-top {
+    position: absolute;
+    top: 90px;
+    left: -230px;
+    width: 287px;
+    height: 287px;
+    background: #8fc742;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  &__circle-bottom-big {
+    position: absolute;
+    right: -180px;
+    bottom: -210px;
+    width: 254px;
+    height: 254px;
+    background: #50b345;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  &__circle-bottom-small {
+    position: absolute;
+    right: 30px;
+    bottom: -310px;
+    width: 132px;
+    height: 132px;
+    background: #50b345;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 1321px) {
+
+  .reservation {
+
+    &__towns {
+      margin: 120px 120px 70px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .reservation {
+    padding: 60px 0 170px;
+
+    &__title {
+
+      h2 {
+        font-size: 40px;
+      }
+    }
+
+    &__subtitle {
+
+      p {
+        font-size: 30px;
+      }
+    }
+
+    &__towns {
+      margin: 60px 60px 60px;
+    }
+
+    &__paprika {
+      width: 330px;
+    }
+
+    &__radish {
+      bottom: -200px;
+      width: 326px;
+      height: 326px;
+
+      img {
+        width: 205px;
+      }
+    }
+
+    &__circle-top {
+      top: 30px;
+      width: 210px;
+      height: 210px;
+    }
+
+    &__circle-bottom-big {
+      bottom: -70px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &__circle-bottom-small {
+      right: -20px;
+      bottom: -150px;
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+  .reservation {
+    position: relative;
+    padding: 40px 0;
+    background-color: #50b345;
+
+    &__title {
+
+      h2 {
+        font-size: 40px;
+        color: #ffffff;
+
+        span {
+          background-color: #8fc742;
+          color: #ffffff;
+        }
+      }
+    }
+
+    &__subtitle {
+
+      p {
+        font-size: 30px;
+        color: #ffffff;
+
+        span {
+          background-color: transparent;
+          color: #ffffff;
+        }
+      }
+    }
+
+    &__towns {
+      margin: 30px 60px 60px;
+    }
+
+    &__paprika {
+      display: none;
+    }
+
+    &__paprika-mobile {
+      display: block;
+    }
+
+    &__radish {
+      display: none;
+    }
+
+    &__circle-top {
+      display: none;
+    }
+
+    &__circle-bottom-big {
+      display: none;
+    }
+
+    &__circle-bottom-small {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .reservation {
+
+    &__title {
+
+      h2 {
+        font-size: 32px;
+      }
+    }
+
+    &__subtitle {
+
+      p {
+        font-size: 22px;
+      }
+    }
+
+    &__towns {
+      margin: 0 0 60px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .reservation {
+
+    &__title {
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+
+    &__subtitle {
+
+      p {
+        font-size: 17px;
+      }
+    }
+
+    &__towns {
+      margin: 0 0 60px;
+    }
+
+    &__btn {
+
+      button {
+        width: 254px !important;
+        height: 49px !important;
+        font-size: 16px;
+      }
+    }
+
+    &__paprika-mobile {
+      width: 90px;
+    }
+  }
+}

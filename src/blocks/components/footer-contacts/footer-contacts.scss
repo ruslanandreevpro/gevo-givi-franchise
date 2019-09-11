@@ -1,0 +1,23 @@
+.contacts {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 1.16em;
+  letter-spacing: 0.05em;
+
+  a {
+    margin-right: 10px;
+    text-decoration: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .contacts {
+    font-size: 12px;
+  }
+}

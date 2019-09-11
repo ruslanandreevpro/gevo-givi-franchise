@@ -1,0 +1,16 @@
+include ../../components/footer-contacts/footer-contacts
+include ../../components/footer-socials/footer-socials
+include ../../components/footer-credits/footer-credits
+
+footer#footer.footer
+    .container
+        .footer__content
+            .contacts
+                +contacts('8 (918) 555-81-01', '|', 'info@gevogivi.ru')
+            .socials
+                +social-icon('./img/svg/footer-icon-env.svg', '#', 'Написать нам', 'margin-right: 20px')
+                +social-icon('./img/svg/footer-icon-fb.svg', '#', 'Мы в Facebook', 'margin-right: 20px;')
+                +social-icon('./img/svg/footer-icon-inst.svg', '#', 'Мы в Instagram', 'margin-right: 20px;')
+                +social-icon('./img/svg/footer-icon-vk.svg', '#', 'Мы в ВКонтакте')
+            .credits
+                +credits()

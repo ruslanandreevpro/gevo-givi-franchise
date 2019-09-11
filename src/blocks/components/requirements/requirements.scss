@@ -1,0 +1,174 @@
+.requirements {
+
+  &__items {
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      list-style: none;
+
+      li {
+        width: 285px;
+        text-align: center;
+        margin-top: 140px;
+
+        .icon {
+          position: relative;
+          width: 100px;
+          height: 100px;
+          margin: 0 auto;
+
+          img {
+            height: 100%;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            right: -7px;
+            bottom: -7px;
+            width: 83px;
+            height: 79px;
+            background: #8fc742;
+            border-radius: 9px;
+          }
+        }
+
+        .title {
+          margin-top: 60px;
+
+          p {
+            font-family: "Montserrat", sans-serif;
+            font-size: 24px;
+            letter-spacing: 0.05em;
+            margin: 0;
+          }
+        }
+
+        .subtitle {
+          margin-top: 15px;
+
+          p {
+            font-family: "a_FuturaRound", sans-serif;
+            font-size: 28px;
+            letter-spacing: 0.05em;
+            margin: 0;
+          }
+        }
+      }
+
+      &:last-child {
+
+        .icon {
+
+          &:after {
+            right: -20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+  .requirements {
+
+    &__items {
+
+      ul {
+
+        li {
+
+          &:nth-child(1) {
+            order: 1;
+          }
+
+          &:nth-child(2) {
+            order: 5;
+          }
+
+          &:nth-child(3) {
+            order: 3;
+          }
+
+          &:nth-child(4) {
+            order: 4;
+          }
+
+          &:nth-child(5) {
+            order: 2;
+          }
+
+          &:nth-child(6) {
+            order: 6;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .requirements {
+
+    &__items {
+
+      ul {
+
+        li {
+          width: 210px;
+          margin-top: 90px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .requirements {
+
+    &__items {
+
+      ul {
+
+        li {
+          width: 145px;
+          margin-top: 90px;
+
+          .icon {
+            width: 65px;
+            height: 65px;
+
+            &:after {
+              right: 0;
+              bottom: -7px;
+              width: 58px;
+              height: 54px;
+            }
+          }
+
+          .title {
+            margin-top: 20px;
+
+            p {
+              font-size: 16px;
+            }
+          }
+
+          .subtitle {
+            margin-top: 5px;
+
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

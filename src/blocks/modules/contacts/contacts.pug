@@ -1,0 +1,14 @@
+include ../../components/question-form/question-form
+include ../../components/instagram-collage/instagram-collage
+
+section#contacts.contacts-sec
+    .container
+        .contacts-sec__logo
+            img(src="./img/svg/logo.svg")
+        .contacts-sec__content
+            +question-form('Остались вопросы?', {id: 'name', name: 'name', type: 'text', placeholder: 'Имя'}, {id: 'phone', name: 'tel', type: 'tel', placeholder: 'Ваш телефон'}, {id: 'email', name: 'email', type: 'email', placeholder: 'Email'})
+            +instagram-collage()
+        .contacts-sec__hot-pepper
+            img(src="./img/09-hot-pepper.png")
+        .contacts-sec__paprika
+            img(src="./img/09-paprika.png")

@@ -1,0 +1,15 @@
+include ../input/input
+include ../checkbox/checkbox
+include ../pop-up-form/pop-up-form
+
+mixin pop-up(title, subtitle)
+    div#modal.modal
+        .modal__content
+            .modal__content_header
+                span.modal-close &times;
+                h2 #{title}
+                p #{subtitle}
+            .modal__content_body
+                +popup-form('Мы свяжемся с вами в ближайшее время', {id: 'name', name: 'name', type: 'text', placeholder: 'Имя'}, {id: 'phone', name: 'tel', type: 'tel', placeholder: 'Ваш телефон'}, {id: 'email', name: 'email', type: 'email', placeholder: 'Email'})
+            .modal__content_footer
+                +checkbox('policy-check', 'true')

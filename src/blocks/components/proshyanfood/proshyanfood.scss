@@ -1,0 +1,53 @@
+.proshyanfood {
+  width: 510px;
+  padding: 40px 35px;
+  background: rgba(80, 179, 69, 0.96);
+  border-radius: 84px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h2 {
+      font-family: "a_FuturaRound", sans-serif;
+      font-size: 35px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__text {
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .proshyanfood {
+    width: 390px;
+    padding: 30px;
+    border-radius: 54px;
+
+    &__title {
+
+      h2 {
+        font-family: "a_FuturaRound", sans-serif;
+        font-size: 28px;
+      }
+    }
+
+    &__text {
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
