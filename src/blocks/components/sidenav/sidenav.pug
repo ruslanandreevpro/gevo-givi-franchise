@@ -1,0 +1,18 @@
+include ../footer-socials/footer-socials
+
+mixin sidenav(id, ...items)
+    div(id=id class="sidenav")
+        .sidenav__logo
+            img(src="./img/logo-sidenav.png")
+        .sidenav__close
+            a &times;
+        .sidenav__items
+            each item in items
+                a(href=item.link) #{item.text}
+        .sidenav__footer
+            +social-icon('./img/svg/footer-icon-env.svg', '#', 'Написать нам', 'margin-right: 20px')
+            +social-icon('./img/svg/footer-icon-fb.svg', '#', 'Мы в Facebook', 'margin-right: 20px;')
+            +social-icon('./img/svg/footer-icon-inst.svg', '#', 'Мы в Instagram', 'margin-right: 20px;')
+            +social-icon('./img/svg/footer-icon-vk.svg', '#', 'Мы в ВКонтакте')
+        .sidenav__border-bottom
+            img(src="./img/svg/sidenav-border-bottom.svg")

@@ -35,3 +35,20 @@
     padding: 0 15px 6vh;
   }
 }
+
+@media (max-width: 575px) {
+
+  .topbar {
+
+    &__contacts {
+
+      a {
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}

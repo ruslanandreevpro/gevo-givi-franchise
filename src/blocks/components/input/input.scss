@@ -3,12 +3,13 @@
   margin-top: 45px;
 
   input {
+    width: calc(100% - 40px);
+    padding: 10px 20px;
     background: #fefefe;
     border-radius: 4px;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     color: #000000;
-    padding: 10px 20px;
 
     &::placeholder {
       color: #000000;

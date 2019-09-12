@@ -29,11 +29,11 @@ function scrollAnchors(e, respond = null) {
     }, 100);
 }
 
-function toggleMenu() {
-    let x = document.getElementById("navbar");
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar";
-    }
-}
+// function toggleMenu() {
+//     let x = document.getElementById("navbar");
+//     if (x.className === "navbar") {
+//         x.className += " responsive";
+//     } else {
+//         x.className = "navbar";
+//     }
+// }

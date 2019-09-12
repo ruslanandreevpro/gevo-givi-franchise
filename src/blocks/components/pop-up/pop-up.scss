@@ -58,14 +58,197 @@
       }
     }
 
+    &_header-mobile {
+      display: none;
+      text-align: center;
+      padding: 30px 0 0;
+
+      h2 {
+        font-family: "a_FuturaRound", sans-serif;
+        font-size: 30px;
+        color: #373737;
+      }
+
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #454545;
+        margin-top: 30px;
+      }
+
+      .modal-close-mobile {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -30px;
+        right: 5px;
+        width: 25px;
+        height: 25px;
+        border: 0.5px solid #ffffff;
+        background: rgba(255, 255, 255, 0.05);
+        color: #ffffff;
+        float: right;
+        font-size: 48px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover, &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+
     &_body {
       padding: 30px 120px 0;
       text-align: center;
     }
 
+    &_body-mobile {
+      display: none;
+    }
+
     &_footer {
       padding: 50px 150px 40px;
       background-color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 1322px) {
+
+  .modal {
+
+    &__content {
+      width: 470px;
+
+      &_header {
+        padding: 45px 50px;
+
+        h2 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+
+      &_body {
+        padding: 15px 75px 0;
+
+        .popup-form {
+
+          &__form {
+            margin-top: 0;
+
+            .input-field {
+              margin-top: 25px;
+            }
+
+            button {
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+
+      &_footer {
+        padding: 30px 75px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .modal {
+
+    &__content {
+      width: calc(100% - 60px);
+
+      &_header {
+        display: none;
+      }
+
+      &_header-mobile {
+        display: block;
+      }
+
+      &_body {
+        display: none;
+      }
+
+      &_body-mobile {
+        display: block;
+        padding: 15px 15px 0;
+
+        .popup-form {
+
+          &__form {
+            margin-top: 0;
+
+            .input-field {
+              margin-top: 25px;
+            }
+
+            button {
+              margin-top: 30px;
+              width: 254px !important;
+              height: 49px !important;
+            }
+          }
+        }
+      }
+
+      &_footer {
+        padding: 30px 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+
+  .modal {
+
+    &__content {
+
+      &_header-mobile {
+
+        h2 {
+          font-size: 22px;
+        }
+
+        p {
+          font-size: 16px;
+          margin-top: 15px;
+        }
+      }
+
+      &_body-mobile {
+        padding: 0 15px 0;
+
+        .popup-form {
+
+          &__form {
+
+            .input-field {
+              margin-top: 15px;
+            }
+
+            button {
+              width: 100% !important;
+            }
+          }
+        }
+      }
+
+      &_footer {
+        padding: 30px 15px;
+      }
     }
   }
 }

@@ -71,3 +71,20 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+
+  .footer {
+
+    &__content {
+
+      .contacts {
+        margin-top: 10px;
+      }
+
+      .socials {
+        margin-top: -10px;
+      }
+    }
+  }
+}

@@ -199,3 +199,11 @@
     }
   }
 }
+
+@media (max-width: 360px) {
+
+  .history {
+    padding: 15px 0 35px;
+    background: url("../img/03-border-top-mobile.png") no-repeat center top / 100% 35px;
+  }
+}

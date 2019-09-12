@@ -91,3 +91,11 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+
+  .contacts-sec {
+    padding: 25px 0 75px;
+    background: #50b345 url("../img/10-border-bottom-mobile.png") no-repeat center bottom / 100% 35px;
+  }
+}

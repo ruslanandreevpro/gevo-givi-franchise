@@ -202,6 +202,7 @@
 @media (max-width: 320px) {
 
   .merits {
+    background: #50b345 url("../img/04-border-top-mobile.png") no-repeat center top / 100% 60px;
 
     &__content {
 
@@ -212,6 +213,12 @@
           font-size: 22px;
         }
       }
+    }
+
+    &__leaf {
+      bottom: -90px;
+      left: -60px;
+      width: 170px;
     }
   }
 }

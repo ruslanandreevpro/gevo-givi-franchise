@@ -31,6 +31,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 120px;
+    z-index: 10;
 
     &_sales {
       width: 270px;
@@ -371,6 +372,7 @@
   &__seeds-mobile-bottom {
     display: none;
     position: absolute;
+    z-index: 1;
     bottom: 270px;
     left: 0;
     width: 200px;
@@ -542,6 +544,124 @@
     &__subtitle {
 
       p {
+        font-size: 17px;
+      }
+    }
+
+    &__sliders {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 70px;
+
+      &_sales {
+        width: 80%;
+
+        p {
+          font-size: 18px;
+        }
+
+        .qty {
+          font-size: 40px;
+        }
+      }
+
+      &_check {
+        width: 80%;
+
+        p {
+          font-size: 18px;
+        }
+
+        .check {
+          font-size: 40px;
+        }
+      }
+
+      &_area {
+        width: 80%;
+
+        p {
+          font-size: 18px;
+        }
+
+        .area {
+          font-size: 40px;
+        }
+      }
+    }
+
+    &__total {
+      margin-top: 45px;
+
+      &_income {
+
+        p {
+          font-size: 16px;
+        }
+
+        .income {
+          font-size: 20px;
+        }
+      }
+
+      &_cost {
+
+        p {
+          font-size: 16px;
+        }
+
+        .cost {
+          font-size: 20px;
+        }
+      }
+
+      &_profit {
+
+        p {
+          font-size: 22px;
+        }
+
+        .profit {
+          font-size: 24px;
+          margin: 7px 0 0 10px;
+          background-color: #50b345;
+        }
+      }
+    }
+
+    &__btn {
+      margin-top: 20px;
+
+      button {
+        width: 254px !important;
+        height: 49px !important;
+        font-size: 16px;
+      }
+    }
+
+    &__ps {
+      display: none;
+    }
+
+    &__seeds-mobile-top {
+      top: -140px;
+      width: 100px;
+    }
+
+    &__seeds-mobile-bottom {
+      bottom: 100px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+
+  .calculator {
+
+    &__subtitle {
+
+      p {
+        font-family: "Montserrat", sans-serif;
         font-size: 17px;
       }
     }

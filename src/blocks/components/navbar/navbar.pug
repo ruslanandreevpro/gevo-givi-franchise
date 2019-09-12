@@ -2,7 +2,7 @@ mixin navbar(id, ...items)
     div(id=id class="navbar")
         each item in items
             a(href=item.link class="scroll") #{item.text}
-        a(href="javascript:void(0);" class="toggler" onclick="toggleMenu()")
+        a(id="openSidenav" class="toggler")
             .bar.bar1
             .bar.bar2
             .bar.bar3

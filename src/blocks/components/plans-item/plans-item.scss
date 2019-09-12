@@ -115,3 +115,34 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+
+  .plans-item {
+
+    .title {
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    .count {
+      position: absolute;
+      top: -5px;
+      transform: translateY(0);
+      font-size: 50px;
+      margin-top: 0;
+
+      &.left {
+        right: -25px;
+      }
+
+      &.right {
+        left: -25px;
+      }
+    }
+
+    .badge {
+      display: none;
+    }
+  }
+}
