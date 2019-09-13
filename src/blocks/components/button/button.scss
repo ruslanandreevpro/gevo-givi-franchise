@@ -8,9 +8,17 @@ button {
   letter-spacing: 0.05em;
   cursor: pointer;
 
+  &:disabled {
+    background-color: #d3d3d3;
+  }
+
   &:hover {
     box-shadow: none;
     background: #ffd73e;
+
+    &:disabled {
+      background-color: #d3d3d3;
+    }
   }
 
   &:active, &:focus {

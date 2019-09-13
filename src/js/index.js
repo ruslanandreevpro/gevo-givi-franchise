@@ -3,9 +3,13 @@ import "./import/components";
 import "abpetkov-powerange/dist/powerange.min";
 import "instafeed.js";
 import "geolocator";
+import "imask";
+import "validator";
 
 document.addEventListener("DOMContentLoaded", event => {
     document.getElementById("sidenav").setAttribute("style", "height: calc(100vh - 50px)");
+    document.getElementById("popup_btn").disabled = true;
+    document.getElementById("question_btn").disabled = true;
     // document.getElementById("sidenav").setAttribute("style", "height: " + window.screen.availHeight + "px");
 });
 

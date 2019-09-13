@@ -14,8 +14,8 @@ mixin pop-up(title, subtitle)
                 h2 Форма заявки
                 p На получение подробного предложения по франшизе
             .modal__content_body
-                +popup-form('Мы свяжемся с вами в ближайшее время', {id: 'name', name: 'name', type: 'text', placeholder: 'Имя'}, {id: 'phone', name: 'tel', type: 'tel', placeholder: 'Ваш телефон'}, {id: 'email', name: 'email', type: 'email', placeholder: 'Email'})
+                +popup-form('Мы свяжемся с вами в ближайшее время', {id: 'popup-name', name: 'name', type: 'text', placeholder: 'Имя'}, {id: 'popup-phone', name: 'tel', type: 'tel', placeholder: 'Ваш телефон'}, {id: 'popup-email', name: 'email', type: 'email', placeholder: 'Email'})
             .modal__content_body-mobile
-                +popup-form('', {id: 'name', name: 'name', type: 'text', placeholder: 'Имя'}, {id: 'phone', name: 'tel', type: 'tel', placeholder: 'Ваш телефон'}, {id: 'email', name: 'email', type: 'email', placeholder: 'Email'})
+                +popup-form('', {id: 'popup-name', name: 'name', type: 'text', placeholder: 'Имя'}, {id: 'popup-phone', name: 'tel', type: 'tel', placeholder: 'Ваш телефон'}, {id: 'popup-email', name: 'email', type: 'email', placeholder: 'Email'})
             .modal__content_footer
                 +checkbox('policy-check', 'true')

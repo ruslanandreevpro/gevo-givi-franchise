@@ -67,7 +67,9 @@
     "dependencies": {
         "abpetkov-powerange": "npmcomponent/abpetkov-powerange",
         "geolocator": "^2.1.5",
+        "imask": "^5.2.1",
         "instafeed.js": "^1.4.1",
-        "smart-grid": "^2.1.2"
+        "smart-grid": "^2.1.2",
+        "validator": "^11.1.0"
     }
 }

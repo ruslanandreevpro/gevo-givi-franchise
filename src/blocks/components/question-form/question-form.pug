@@ -6,7 +6,7 @@ mixin question-form(title, ...inputs)
         .question-form__title
             h3 #{title}
         .question-form__form
-            form
+            form(action="email.php" method="POST")
                 each input in inputs
                     +input(input.id, input.name, input.type, input.placeholder)
                 +button('question_btn', '292px', '68px', 'Оставить заявку', 'submit')
