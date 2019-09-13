@@ -8,7 +8,6 @@
   top: 0;
   left: 0;
   width: 0;
-  height: calc(100% - 50px);
   padding: 50px 0 0;
   transition: 0.5s;
   background: #50b345;
@@ -128,8 +127,6 @@
 @media (max-width: 575px) {
 
   .sidenav {
-    height: calc(100% - 50px);
-    padding: 50px 0 0;
 
     &__logo {
       width: 217px;
@@ -168,8 +165,6 @@
 @media (max-width: 360px) {
 
   .sidenav {
-    height: calc(100% - 50px);
-    padding: 50px 0 0;
 
     &__logo {
       width: 197px;
@@ -189,8 +184,6 @@
 @media (max-width: 320px) {
 
   .sidenav {
-    height: calc(100% - 50px);
-    padding: 50px 0 0;
 
     &__logo {
       width: 157px;

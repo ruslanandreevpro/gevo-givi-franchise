@@ -1,6 +1,6 @@
-mixin town(title)
+mixin town(id, title)
     .item
         .town-icon
             img(src="./img/svg/05-placeholder.svg")
-        .town-title
+        div(id=id class="town-title")
             p #{title}
