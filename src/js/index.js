@@ -5,12 +5,13 @@ import "instafeed.js";
 import "geolocator";
 import "imask";
 import "validator";
+import innerVh from "inner-vh";
 
 document.addEventListener("DOMContentLoaded", event => {
-    document.getElementById("sidenav").setAttribute("style", "height: calc(100vh - 50px)");
-    document.getElementById("popup_btn").disabled = true;
+    let sidenav = document.getElementById("sidenav");
+    innerVh("sidenavHeight", (innerVhInPx) => console.log(""), sidenav);
     document.getElementById("question_btn").disabled = true;
-    // document.getElementById("sidenav").setAttribute("style", "height: " + window.screen.availHeight + "px");
+    document.getElementById("popup_btn").disabled = true;
 });
 
 let geolocator = require("geolocator");

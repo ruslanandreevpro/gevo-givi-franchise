@@ -1,6 +1,7 @@
 .calculator {
   padding: 45px 0;
   background: #8fc742;
+  margin-top: -1px;
 
   .container {
     position: relative;
@@ -39,54 +40,82 @@
 
       .slider {
 
-        .range-bar {
-          display: block;
+        .irs-line {
           position: relative;
           width: 100%;
-          height: 4px;
+          height: 5px;
           background-color: #000000;
           border-radius: 15px;
         }
 
-        .range-quantity {
-          display: block;
-          width: 0;
-          height: 100%;
+        .irs-bar {
+          height: 5px;
           background-color: #d13834;
           border-radius: 15px;
         }
 
-        .range-handle {
+        .irs-handle {
           position: absolute;
-          top: -18px;
+          top: auto;
           left: 0;
-          width: 45px;
+          width: 37px;
           height: 37px;
-          background: url("../img/08-range-tomato.png") no-repeat center / contain;
+          background: url("../img/08-range-tomato.png") no-repeat center / 100%;
           cursor: move;
 
-          //-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-          //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+          i {
+            display: none;
+          }
         }
 
-        .range-min, .range-max {
-          position: absolute;
-          top: -9px;
-          width: 24px;
-          height: 20px;
-          color: #181819;
-          font-size: 12px;
-          padding-top: 4px;
-          text-align: center;
-        }
-
-        .range-min {
-          left: -30px;
-        }
-
-        .range-max {
-          right: -30px;
-        }
+        //.range-bar {
+        //  display: block;
+        //  position: relative;
+        //  width: 100%;
+        //  height: 5px;
+        //  background-color: #000000;
+        //  border-radius: 15px;
+        //}
+        //
+        //.range-quantity {
+        //  display: block;
+        //  width: 0;
+        //  height: 100%;
+        //  background-color: #d13834;
+        //  border-radius: 15px;
+        //}
+        //
+        //.range-handle {
+        //  position: absolute;
+        //  top: -18px;
+        //  left: 0;
+        //  width: 37px;
+        //  height: 37px;
+        //  background: url("../img/08-range-tomato.png") no-repeat center / 100%;
+        //  cursor: move;
+        //
+        //  //-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        //  //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        //}
+        //
+        //.range-min, .range-max {
+        //  position: absolute;
+        //  top: -9px;
+        //  width: 24px;
+        //  height: 20px;
+        //  color: #181819;
+        //  font-size: 12px;
+        //  padding-top: 4px;
+        //  text-align: center;
+        //}
+        //
+        //.range-min {
+        //  left: -30px;
+        //}
+        //
+        //.range-max {
+        //  right: -30px;
+        //}
       }
 
       p {
@@ -108,56 +137,84 @@
 
       .slider {
 
-        .range-bar {
-          display: block;
+        .irs-line {
           position: relative;
-          z-index: 1;
           width: 100%;
-          height: 4px;
+          height: 5px;
           background-color: #000000;
           border-radius: 15px;
         }
 
-        .range-quantity {
-          display: block;
-          width: 0;
-          height: 100%;
-          background-color: #ed8f20;
+        .irs-bar {
+          height: 5px;
+          background-color: #f9d70b;
           border-radius: 15px;
         }
 
-        .range-handle {
+        .irs-handle {
           position: absolute;
-          z-index: 0;
-          top: -18px;
+          top: auto;
           left: 0;
-          width: 45px;
+          width: 37px;
           height: 37px;
-          background: url("../img/08-range-carrot.png") no-repeat center / contain;
+          background: url("../img/08-range-lemon.png") no-repeat center / 100%;
           cursor: move;
 
-          //-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-          //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+          i {
+            display: none;
+          }
         }
 
-        .range-min, .range-max {
-          position: absolute;
-          top: -9px;
-          width: 24px;
-          height: 20px;
-          color: #181819;
-          font-size: 12px;
-          padding-top: 4px;
-          text-align: center;
-        }
-
-        .range-min {
-          left: -30px;
-        }
-
-        .range-max {
-          right: -30px;
-        }
+        //.range-bar {
+        //  display: block;
+        //  position: relative;
+        //  z-index: 1;
+        //  width: 100%;
+        //  height: 5px;
+        //  background-color: #000000;
+        //  border-radius: 15px;
+        //}
+        //
+        //.range-quantity {
+        //  display: block;
+        //  width: 0;
+        //  height: 100%;
+        //  background-color: #ed8f20;
+        //  border-radius: 15px;
+        //}
+        //
+        //.range-handle {
+        //  position: absolute;
+        //  z-index: 0;
+        //  top: -21px;
+        //  left: 0;
+        //  width: 37px;
+        //  height: 37px;
+        //  background: url("../img/08-range-carrot.png") no-repeat center / 100%;
+        //  cursor: move;
+        //
+        //  //-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        //  //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        //}
+        //
+        //.range-min, .range-max {
+        //  position: absolute;
+        //  top: -9px;
+        //  width: 24px;
+        //  height: 20px;
+        //  color: #181819;
+        //  font-size: 12px;
+        //  padding-top: 4px;
+        //  text-align: center;
+        //}
+        //
+        //.range-min {
+        //  left: -30px;
+        //}
+        //
+        //.range-max {
+        //  right: -30px;
+        //}
       }
 
       p {
@@ -179,54 +236,82 @@
 
       .slider {
 
-        .range-bar {
-          display: block;
+        .irs-line {
           position: relative;
           width: 100%;
-          height: 4px;
+          height: 5px;
           background-color: #000000;
           border-radius: 15px;
         }
 
-        .range-quantity {
-          display: block;
-          width: 0;
-          height: 100%;
+        .irs-bar {
+          height: 5px;
           background-color: #f0785a;
           border-radius: 15px;
         }
 
-        .range-handle {
+        .irs-handle {
           position: absolute;
-          top: -18px;
+          top: auto;
           left: 0;
-          width: 45px;
+          width: 37px;
           height: 37px;
-          background: url("../img/08-range-store.png") no-repeat center / contain;
+          background: url("../img/08-range-store.png") no-repeat center / 100%;
           cursor: move;
 
-          //-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-          //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+          i {
+            display: none;
+          }
         }
 
-        .range-min, .range-max {
-          position: absolute;
-          top: -9px;
-          width: 24px;
-          height: 20px;
-          color: #181819;
-          font-size: 12px;
-          padding-top: 4px;
-          text-align: center;
-        }
-
-        .range-min {
-          left: -30px;
-        }
-
-        .range-max {
-          right: -30px;
-        }
+        //.range-bar {
+        //  display: block;
+        //  position: relative;
+        //  width: 100%;
+        //  height: 5px;
+        //  background-color: #000000;
+        //  border-radius: 15px;
+        //}
+        //
+        //.range-quantity {
+        //  display: block;
+        //  width: 0;
+        //  height: 100%;
+        //  background-color: #f0785a;
+        //  border-radius: 15px;
+        //}
+        //
+        //.range-handle {
+        //  position: absolute;
+        //  top: -18px;
+        //  left: 0;
+        //  width: 37px;
+        //  height: 37px;
+        //  background: url("../img/08-range-store.png") no-repeat center / 100%;
+        //  cursor: move;
+        //
+        //  //-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        //  //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        //}
+        //
+        //.range-min, .range-max {
+        //  position: absolute;
+        //  top: -9px;
+        //  width: 24px;
+        //  height: 20px;
+        //  color: #181819;
+        //  font-size: 12px;
+        //  padding-top: 4px;
+        //  text-align: center;
+        //}
+        //
+        //.range-min {
+        //  left: -30px;
+        //}
+        //
+        //.range-max {
+        //  right: -30px;
+        //}
       }
 
       p {
@@ -304,24 +389,6 @@
   &__btn {
     margin-top: 60px;
     text-align: center;
-
-    //button {
-    //  width: 314px;
-    //  height: 65px;
-    //  background: #ffb941;
-    //  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    //  border: none;
-    //  border-radius: 17px;
-    //  font-family: Tahoma, sans-serif;
-    //  font-size: 1.1em;
-    //  letter-spacing: 0.05em;
-    //  cursor: pointer;
-    //
-    //  &:hover {
-    //    box-shadow: none;
-    //    background: #ffd73e;
-    //  }
-    //}
   }
 
   &__ps {
@@ -542,6 +609,7 @@
     }
 
     &__subtitle {
+      margin-top: 0;
 
       p {
         font-size: 17px;
@@ -650,6 +718,17 @@
 
     &__seeds-mobile-bottom {
       bottom: 100px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+  .calculator {
+
+    &__seeds-mobile-bottom {
+      bottom: 80px;
+      width: 120px;
     }
   }
 }
@@ -767,7 +846,8 @@
     }
 
     &__seeds-mobile-bottom {
-      bottom: 100px;
+      bottom: 120px;
+      width: 100px;
     }
   }
 }

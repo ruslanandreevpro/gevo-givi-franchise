@@ -1,3 +1,5 @@
+import disableScroll from "disable-scroll";
+
 // Get the modal
 let modal2 = document.getElementById("policy-modal");
 
@@ -11,14 +13,19 @@ let span2 = document.getElementsByClassName("policy-modal-close")[0];
 btn4.onclick = event => {
     event.preventDefault();
     modal2.style.display = "block";
+    disableScroll.off();
 };
 
 // When the user clicks on <span> (x), close the modal
-span2.onclick = () => modal2.style.display = "none";
+span2.onclick = () => {
+    modal2.style.display = "none";
+    disableScroll.on();
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.addEventListener("click", event => {
     if (event.target === modal2) {
         modal2.style.display = "none";
+        disableScroll.on();
     }
 });

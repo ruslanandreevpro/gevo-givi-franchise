@@ -5,18 +5,41 @@
   &__content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 65px;
+
+    .contacts {
+      justify-content: flex-start;
+    }
 
     .socials {
       display: flex;
-      margin: 0 auto;
+      justify-content: center;
     }
 
     .credits {
-      margin-left: auto;
+      justify-content: flex-end;
     }
   }
 }
+
+//@media (max-width: 1321px) {
+//
+//  .footer {
+//
+//    &__content {
+//      flex-direction: column;
+//
+//      .socials {
+//        margin: 30px 0 0 0;
+//      }
+//
+//      .credits {
+//        margin: 0 auto;
+//      }
+//    }
+//  }
+//}
 
 @media (max-width: 1199px) {
 

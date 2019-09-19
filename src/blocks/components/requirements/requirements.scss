@@ -2,13 +2,13 @@
 
   &__items {
 
-    ul {
+    .requirements-index {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       list-style: none;
 
-      li {
+      .requirements-item {
         width: 285px;
         text-align: center;
         margin-top: 140px;
@@ -57,14 +57,14 @@
             margin: 0;
           }
         }
-      }
 
-      &:last-child {
+        &:nth-child(6) {
 
-        .icon {
+          .icon {
 
-          &:after {
-            right: -20px;
+            &:after {
+              right: -20px;
+            }
           }
         }
       }
@@ -78,9 +78,9 @@
 
     &__items {
 
-      ul {
+      .requirements-index {
 
-        li {
+        .requirements-item {
 
           &:nth-child(1) {
             order: 1;
@@ -117,9 +117,9 @@
 
     &__items {
 
-      ul {
+      .requirements-index {
 
-        li {
+        .requirements-item {
           width: 210px;
           margin-top: 90px;
         }
@@ -134,9 +134,9 @@
 
     &__items {
 
-      ul {
+      .requirements-index {
 
-        li {
+        .requirements-item {
           width: 145px;
           margin-top: 90px;
 
@@ -145,8 +145,6 @@
             height: 65px;
 
             &:after {
-              right: 0;
-              bottom: -7px;
               width: 58px;
               height: 54px;
             }
@@ -165,6 +163,31 @@
 
             p {
               font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+  .requirements {
+
+    &__items {
+
+      .requirements-index {
+
+        .requirements-item {
+
+          .icon {
+
+            &:after {
+              right: -7px;
+              bottom: -7px;
+              width: 58px;
+              height: 54px;
             }
           }
         }

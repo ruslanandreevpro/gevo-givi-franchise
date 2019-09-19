@@ -8,11 +8,12 @@ mixin sidenav(id, ...items)
             a &times;
         .sidenav__items
             each item in items
-                a(href=item.link) #{item.text}
+                a(href=item.link class="link") #{item.text}
         .sidenav__footer
-            +social-icon('./img/svg/footer-icon-env.svg', '#', 'Написать нам', 'margin-right: 20px')
-            +social-icon('./img/svg/footer-icon-fb.svg', '#', 'Мы в Facebook', 'margin-right: 20px;')
-            +social-icon('./img/svg/footer-icon-inst.svg', '#', 'Мы в Instagram', 'margin-right: 20px;')
-            +social-icon('./img/svg/footer-icon-vk.svg', '#', 'Мы в ВКонтакте')
-        .sidenav__border-bottom
-            img(src="./img/svg/sidenav-border-bottom.svg")
+            .sidenav__footer_border-bottom
+                img(src="./img/sidenav-border-bottom.png")
+            .sidenav__footer_socials
+                +social-icon('./img/svg/footer-icon-env.svg', 'mailto:info@gevogivi.ru', 'Написать нам', 'margin-right: 20px')
+                +social-icon('./img/svg/footer-icon-fb.svg', 'https://www.facebook.com/gevogivi/', 'Мы в Facebook', 'margin-right: 20px;')
+                +social-icon('./img/svg/footer-icon-inst.svg', 'https://www.instagram.com/gevogivi/', 'Мы в Instagram', 'margin-right: 20px;')
+                +social-icon('./img/svg/footer-icon-vk.svg', 'https://vk.com/gevogivi', 'Мы в ВКонтакте')

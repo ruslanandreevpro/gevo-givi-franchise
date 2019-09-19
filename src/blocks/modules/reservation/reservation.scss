@@ -311,3 +311,29 @@
     }
   }
 }
+
+@media (max-width: 420px) {
+
+  .reservation {
+
+    &__title {
+
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+
+  .reservation {
+
+    &__title {
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+  }
+}

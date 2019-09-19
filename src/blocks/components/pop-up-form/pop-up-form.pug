@@ -6,7 +6,7 @@ mixin popup-form(title, ...inputs)
         .popup-form__title
             p #{title}
         .popup-form__form
-            form(action="email.php" method="POST")
+            form(id="popup_form" action="email.php" method="POST")
                 each input in inputs
                     +input(input.id, input.name, input.type, input.placeholder)
-                +button('popup_btn', '280px', '70px', 'Оставить заявку', 'submit')
+                +button('popup_btn', '280px', '60px', 'Оставить заявку')

@@ -1,17 +1,19 @@
 .contacts {
-  display: flex;
+  //display: flex;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  font-size: 1.16em;
+  font-size: 18px;
   letter-spacing: 0.05em;
+  text-align: center;
 
   a {
-    margin-right: 10px;
+    //margin-right: 10px;
     text-decoration: none;
+    line-height: 1.5;
 
-    &:last-child {
-      margin-right: 0;
-    }
+    //&:last-child {
+    //  margin-right: 0;
+    //}
   }
 }
 

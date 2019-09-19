@@ -1,5 +1,6 @@
 mixin contacts(phone, divider, email)
     .contacts
         a(href="tel:" + phone) #{phone}
-        a() #{divider}
+        //a() #{divider}
+        br
         a(href="mailto:" + email) #{email}

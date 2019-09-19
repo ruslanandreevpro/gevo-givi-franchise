@@ -1,5 +1,5 @@
 mixin plans-item(title, count, badge, alignment)
-    div(class="plans-item " + alignment)
+    div(class="plans-item " + "item-" + count + " " + alignment)
         .title
             p #{title}
         div(class="count " + alignment)

@@ -4,23 +4,25 @@ include ../blocks/components/pop-up/pop-up
 include ../blocks/components/policy-modal/policy-modal
 
 block variables
-	- const title = "Гево & Гиви - Открой свой бизнес по франшизе"
+    - const title = "Гево & Гиви - Открой свой бизнес по франшизе"
 
 block content
-	include ../blocks/modules/header/header
-	include ../blocks/modules/about/about
-	include ../blocks/modules/history/history
-	include ../blocks/modules/merits/merits
-	include ../blocks/modules/reservation/reservation
-	include ../blocks/modules/interior/interior
-	include ../blocks/modules/building/building
-	include ../blocks/modules/calculator/calculator
-	include ../blocks/modules/plans/plans
-	include ../blocks/modules/contacts/contacts
-	include ../blocks/modules/footer/footer
-	+pop-up('Оставьте заявку', 'На получение подробного коммерческого предложения по франшизе Gevo-givi')
-	+policy-modal()
+    include ../blocks/modules/header/header
+    include ../blocks/modules/about/about
+    include ../blocks/modules/history/history
+    include ../blocks/modules/merits/merits
+    include ../blocks/modules/reservation/reservation
+    include ../blocks/modules/interior/interior
+    include ../blocks/modules/building/building
+    include ../blocks/modules/calculator/calculator
+    include ../blocks/modules/plans/plans
+    include ../blocks/modules/contacts/contacts
+    include ../blocks/modules/footer/footer
+    +pop-up('Оставьте заявку', 'На получение подробного коммерческого предложения по франшизе Gevo-givi')
+    +policy-modal()
 
 block scripts
-	script(src="./js/main.js")
-	script(src="./js/vendor.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js")
+    script(src="./js/main.js")
+    script(src="./js/vendor.js")

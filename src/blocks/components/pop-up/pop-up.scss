@@ -1,12 +1,12 @@
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 20; /* Sit on top */
   top: 0;
   left: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: hidden; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
 
@@ -23,7 +23,7 @@
 
     &_header {
       position: relative;
-      padding: 75px 50px;
+      padding: 7.5vh 50px;
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/popup-header-bg.jpg") no-repeat center top / 100% auto;
       -webkit-border-radius: 9px;
       -moz-border-radius: 9px;
@@ -31,7 +31,7 @@
 
       h2 {
         font-family: "a_FuturaRound", sans-serif;
-        font-size: 45px;
+        font-size: 40px;
         color: #ffffff;
       }
 
@@ -102,7 +102,7 @@
     }
 
     &_body {
-      padding: 30px 120px 0;
+      padding: 3vh 100px 0;
       text-align: center;
     }
 
@@ -111,8 +111,46 @@
     }
 
     &_footer {
-      padding: 50px 150px 40px;
+      padding: 3vh 150px;
       background-color: #ffffff;
+      border-bottom-left-radius: inherit;
+      border-bottom-right-radius: inherit;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+
+  .modal {
+
+    &__content {
+
+      &_header {
+        padding: 2.5vh 50px;
+      }
+
+      &_body {
+        padding: 15px 90px 0;
+
+        .popup-form {
+
+          &__form {
+            margin-top: 0;
+
+            .input-field {
+              margin-top: 2.5vh !important;
+            }
+
+            button {
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+
+      &_footer {
+        padding: 20px 75px;
+      }
     }
   }
 }
@@ -125,10 +163,10 @@
       width: 470px;
 
       &_header {
-        padding: 45px 50px;
+        padding: 25px 50px;
 
         h2 {
-          font-size: 40px;
+          font-size: 36px;
         }
 
         p {
@@ -156,7 +194,7 @@
       }
 
       &_footer {
-        padding: 30px 75px;
+        padding: 20px 75px;
       }
     }
   }
@@ -219,11 +257,11 @@
       &_header-mobile {
 
         h2 {
-          font-size: 22px;
+          font-size: 18px;
         }
 
         p {
-          font-size: 16px;
+          font-size: 14px;
           margin-top: 15px;
         }
       }
@@ -240,6 +278,7 @@
             }
 
             button {
+              margin-top: 15px;
               width: 100% !important;
             }
           }
@@ -247,7 +286,7 @@
       }
 
       &_footer {
-        padding: 30px 15px;
+        padding: 15px;
       }
     }
   }

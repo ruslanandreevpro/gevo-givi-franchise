@@ -9,17 +9,20 @@ section#calculator.calculator
         .calculator__sliders
             .calculator__sliders_sales
                 .slider
-                    input(type="text" name="qty" class="sales-range")
+                    //input(type="text" name="qty" class="sales-range")
+                    input(type="text" class="sales-slider" name="sales_range" value="")
                 p Количество продаж в месяц
                 div#qty.qty 10 000
             .calculator__sliders_check
                 .slider
-                    input(type="text" name="check" class="check-range")
+                    //input(type="text" name="check" class="check-range")
+                    input(type="text" class="check-slider" name="check_range" value="")
                 p Средний чек
                 div#check.check 350 руб.
             .calculator__sliders_area
                 .slider
-                    input(type="text" name="area" class="area-range")
+                    //input(type="text" name="area" class="area-range")
+                    input(type="text" class="area-slider" name="area_range" value="")
                 p Площадь магазина
                 div#area.area 100 м2
         .calculator__total
