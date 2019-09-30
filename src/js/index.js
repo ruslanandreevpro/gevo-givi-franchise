@@ -1,6 +1,5 @@
 import "./import/modules";
 import "./import/components";
-import "abpetkov-powerange/dist/powerange.min";
 import "instafeed.js";
 import "geolocator";
 import "imask";
@@ -20,7 +19,7 @@ geolocator.config({
     language: "ru",
     google: {
         version: "3",
-        key: "AIzaSyBA5worfgANjXL7i8y1dgiQa55o7cXq49A"
+        key: "AIzaSyBTkvn4cBMAPSDFDPfSnq04wYGusoWYN2o"
     }
 });
 

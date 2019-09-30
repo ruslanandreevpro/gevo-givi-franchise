@@ -1,6 +1,6 @@
-mixin merit-item(text)
-    .merit-item
-        .icon
-            img(src="./img/svg/04-pin.svg")
+mixin merit-item(text, className)
+    div(class=className + " merit-item")
+        //.icon
+        //    img(src="./img/svg/04-pin.svg")
         .text
             p #{text}

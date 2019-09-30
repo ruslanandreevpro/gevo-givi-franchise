@@ -3,6 +3,7 @@
   align-items: center;
   //margin-bottom: 8vh;
   margin-bottom: 45px;
+  position: relative;
 
   .icon {
     //width: 45px !important;
@@ -15,14 +16,165 @@
     }
   }
 
+  &.merit-01 {
+    margin-top: 45px;
+
+    &:before {
+      content: url("../img/ic-merits-01.png");
+      width: 65px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+
+    &:after {
+      content: '';
+      width: 56px;
+      height: 56px;
+      background: #8FC742;
+      border-radius: 9px;
+      position: absolute;
+      bottom: -5px;
+      left: 18px;
+    }
+  }
+
+  &.merit-02 {
+    margin-top: 45px;
+
+    &:before {
+      content: url("../img/ic-merits-02.png");
+      width: 65px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+
+    &:after {
+      content: '';
+      width: 56px;
+      height: 56px;
+      background: #8FC742;
+      border-radius: 9px;
+      position: absolute;
+      bottom: 0px;
+      left: 21px;
+    }
+  }
+
+  &.merit-03 {
+    margin-top: 60px;
+
+    &:before {
+      content: url("../img/ic-merits-03.png");
+      width: 65px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+
+    &:after {
+      content: '';
+      width: 56px;
+      height: 56px;
+      background: #8FC742;
+      border-radius: 9px;
+      position: absolute;
+      bottom: -8px;
+      left: 15px;
+    }
+  }
+
+  &.merit-04 {
+    margin-top: 60px;
+
+    &:before {
+      content: url("../img/ic-merits-04.png");
+      width: 65px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+
+    &:after {
+      content: '';
+      width: 56px;
+      height: 56px;
+      background: #8FC742;
+      border-radius: 9px;
+      position: absolute;
+      bottom: -11px;
+      left: 21px;
+    }
+  }
+
+  &.merit-05 {
+    margin-top: 60px;
+
+    &:before {
+      content: url("../img/ic-merits-05.png");
+      width: 65px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+
+    &:after {
+      content: '';
+      width: 56px;
+      height: 56px;
+      background: #8FC742;
+      border-radius: 9px;
+      position: absolute;
+      bottom: -8px;
+      left: 15px;
+    }
+  }
+
+  &.merit-06 {
+    margin-top: 60px;
+
+    &:before {
+      content: url("../img/ic-merits-06.png");
+      width: 65px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+
+    &:after {
+      content: '';
+      width: 56px;
+      height: 56px;
+      background: #8FC742;
+      border-radius: 9px;
+      position: absolute;
+      bottom: -8px;
+      left: 27px;
+    }
+  }
+
   .text {
-    margin-left: 10px;
+    margin-left: 90px;
 
     p {
       font-family: "a_FuturaRound", sans-serif;
       font-size: 25px;
       color: #ffffff;
       letter-spacing: 0.015em;
+      margin: 0;
     }
   }
 }
@@ -71,6 +223,28 @@
 
     .icon {
       display: none;
+    }
+
+    &.merit-01, &.merit-02, &.merit-03, &.merit-04, &.merit-05, &.merit-06 {
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 13px;
+        height: 13px;
+        border: 4px solid #ffffff;
+        transform: translateY(-50%);
+        background-color: transparent;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+
+      &:after {
+        display: none;
+      }
     }
 
     .text {

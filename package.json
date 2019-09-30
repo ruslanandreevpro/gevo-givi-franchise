@@ -65,7 +65,6 @@
         "yargs": "~13.2.4"
     },
     "dependencies": {
-        "abpetkov-powerange": "npmcomponent/abpetkov-powerange",
         "disable-scroll": "^0.5.0",
         "geolocator": "^2.1.5",
         "imask": "^5.2.1",

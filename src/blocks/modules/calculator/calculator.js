@@ -30,40 +30,69 @@ let profitNumber = wNumb({
     thousand: " "
 });
 
+const salesChange = data => {
+    sales = data.from_value;
+    console.log(sales);
+    document.getElementById("qty").innerHTML = salesNumber.to(sales);
+    income = sales * check;
+    document.getElementById("income").innerHTML = incomeNumber.to(income) + " руб.";
+    if ((sales > salesLast) && (salesLast !== 14000)) {
+        cost = costLast + 50700;
+    } else if ((sales < salesLast) && (salesLast !== 10000)) {
+        cost = costLast - 50700;
+    }
+    if ((sales === 10000) && (check === 350) && (area === 100)) {
+        cost = 3228000;
+    }
+    if ((sales === 10000) && (check === 350) && (area === 200)) {
+        cost = 3228000 + 120500;
+    }
+    if ((sales === 10000) && (check === 350) && (area === 350)) {
+        cost = 3228000 + 180500;
+    }
+    if ((sales === 14000) && (check === 350)) {
+        cost = 4242000;
+    }
+    salesLast = sales;
+    costLast = cost;
+    document.getElementById("cost").innerHTML = costNumber.to(cost) + " руб.";
+    profit = income - cost;
+    document.getElementById("profit").innerHTML = profitNumber.to(profit) + " руб.";
+}
+
 $(".sales-slider").ionRangeSlider({
-    min: 10000,
-    max: 14000,
-    step: 200,
+    values: [
+        10000,
+        10200,
+        10400,
+        10600,
+        10800,
+        11000,
+        11200,
+        11400,
+        11600,
+        11800,
+        12000,
+        12200,
+        12400,
+        12600,
+        12800,
+        13000,
+        13200,
+        13400,
+        13600,
+        13800,
+        14000
+    ],
+    // min: 10000,
+    // max: 14000,
+    // step: 200,
     hide_min_max: true,
     hide_from_to: true,
-    from_min: 10000,
-    from_max: 14000,
-    force_edges: true,
-    onChange: data => {
-        sales = data.from;
-        document.getElementById("qty").innerHTML = salesNumber.to(sales);
-        income = sales * check;
-        document.getElementById("income").innerHTML = incomeNumber.to(income) + " руб.";
-        if ((sales > salesLast) && (salesLast !== 14000)) {
-            cost = costLast + 50700;
-        } else if ((sales < salesLast) && (salesLast !== 10000)) {
-            cost = costLast - 50700;
-        }
-        if ((sales === 10000) && (check === 350) && (area === 100)) {
-            cost = 3228000;
-        }
-        if ((sales === 10000) && (check === 350) && (area === 200)) {
-            cost = 3228000 + 120500;
-        }
-        if ((sales === 10000) && (check === 350) && (area === 350)) {
-            cost = 3228000 + 180500;
-        }
-        salesLast = sales;
-        costLast = cost;
-        document.getElementById("cost").innerHTML = costNumber.to(cost) + " руб.";
-        profit = income - cost;
-        document.getElementById("profit").innerHTML = profitNumber.to(profit) + " руб.";
-    }
+    // from_min: 10000,
+    // from_max: 14000,
+    // force_edges: true,
+    onChange: salesChange
 });
 
 $(".check-slider").ionRangeSlider({
@@ -92,6 +121,9 @@ $(".check-slider").ionRangeSlider({
         }
         if ((sales === 10000) && (check === 350) && (area === 350)) {
             cost = 3228000 + 180500;
+        }
+        if ((check === 950) && (sales === 10000)) {
+            cost = 7668000;
         }
         checkLast = check;
         document.getElementById("cost").innerHTML = costNumber.to(cost) + " руб.";
